@@ -38,7 +38,7 @@ $(document).ready(function () {
     $("#mudar").click(function () {
         var nome = $("#nome").val();
         var novo = $("<li>" + nome + "</li>").click(function () {
-            $(this).fadeIn("slow", function(){
+            $(this).css("background-color", "gold").fadeOut("slow", function(){
                 $(this).remove();
             });
             
