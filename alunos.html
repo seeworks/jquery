@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <title>Aula JQuery</title>
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="alunos.js"></script>
+    <meta charset="utf-8">
+
+    <style>
+        table {
+            background-color: #f9f9f9;
+            padding: 5px;
+            border: 1px dashed #333;
+            box-shadow: 2px 2px 3px #ddd;
+        }
+
+        td {
+            border: 1px solid #222;
+            padding: 2px;
+
+        }
+
+        th {
+            background-color: silver;
+            color: #222;
+        }
+        fieldset{
+            width: 320px;
+            margin-bottom: 20px;
+        }
+        label{
+            width: 130px;
+            display: inline-block;
+        }
+        input[type="submit"]{
+            float: right;
+            margin: 4px;
+            background-color: green;
+            color: white;
+            border: 1px solid #222;
+            padding: 2px;
+        }
+        .erro{
+            color: #fff;
+            background-color: red;
+            padding: 5px;
+            display: none;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <h1 class="titulo">Cadastro de Alunos</h1>
+    <fieldset>
+        <legend>Dados dos Alunos</legend>
+        <div class="erro"></div>
+        <div>
+            <label>Código:</label>
+            <input type="text" name="codigo" erro-msg="O codigo é obrigatorio" />
+        </div>
+        <div>
+            <label>Nome:</label>
+            <input type="text" name="nome" erro-msg="O nome é obrigatorio" />
+        </div>
+        <div>
+            <label>Data Nascimento:</label>
+            <input type="text" name="data" erro-msg="A data deve ser valida" />
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="text" name="email" erro-msg="O email é obrigatorio" />
+        </div>
+        <div><input type="submit" value="Cadastrar" id="cadastrar" /></div>
+    </fieldset>
+    <table id="listagem">
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Nome</th>
+                <th>Data Nascimento</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1234</td>
+                <td>Janis</td>
+                <td>4/2/1990</td>
+                <td>jc@teste.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>
